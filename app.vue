@@ -1,6 +1,7 @@
 <template>
   <main class="container mx-auto p-5">
     <AppHeader />
+    <Cart />
     <NuxtPage />
     <AppFooter />
   </main>

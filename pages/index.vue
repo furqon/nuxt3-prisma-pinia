@@ -38,10 +38,9 @@ const { data } = await useAsyncData('count', () => $fetch('/api/product?top=4'))
             <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-xs" href="#">S</a>
           </div>
 
-          <div class="flex flex-col xl:flex-row justify-between">
+          <div class="flex flex-col xl:flex-row space-x-1 items-end">
             <a class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-2 px-4 my-2 text-sm text-white hover:bg-pink-600 hover:from-pink-600 hover:to-pink-600 flex flex-row justify-center" href="#">
-              Add to cart
-              <span i-carbon-shopping-cart class="h-4 w-6 inline-block text-grey-300" />
+              <span i-carbon-shopping-cart class="align-middle h-5 w-6 inline-block text-grey-300" />
             </a>
             <a class="bg-purple-600 rounded-full py-2 px-4 my-2 text-sm text-white hover:bg-purple-700 flex flex-row justify-center" href="#">
               View Details
@@ -88,5 +87,3 @@ const { data } = await useAsyncData('count', () => $fetch('/api/product?top=4'))
     </div>
   </div>
 </template>
-
-export { }

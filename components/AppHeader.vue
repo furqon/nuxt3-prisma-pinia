@@ -11,10 +11,19 @@
       <a href="#" class="text-grey-600 hover:text-purple-400 p-4">Shop</a>
       <a href="#" class="text-grey-600 hover:text-purple-400 p-4">Blog</a>
       <a href="#" class="text-grey-600 hover:text-purple-400 p-4">Contact</a>
-      <a href="#" class="bg-purple-600 text-gray-50 hover:bg-purple-700 p-3 px-3 sm:px-5 rounded-full">
-        <span i-carbon-shopping-cart class="h-5 w-6 inline-block text-grey-300" />
+      <a href="#" class="bg-purple-600 text-gray-50 hover:bg-purple-700 p-3 px-3 sm:px-5 rounded-full" @click="toggleCart">
+        <span i-carbon-shopping-cart class="align-middle h-5 w-6 inline-block text-grey-300" />
         Cart (0)
       </a>
     </div>
   </div>
 </template>
+
+<script setup>
+import { useSysStore } from '~/stores/sys'
+const sysStore = useSysStore()
+
+const toggleCart = () => {
+  sysStore.toggleCartOpen()
+}
+</script>
