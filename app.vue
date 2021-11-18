@@ -1,11 +1,12 @@
 <template>
-  <main class="py-20 px-10 text-center">
+  <main class="container mx-auto p-5">
+    <AppHeader />
     <NuxtPage />
-    <Footer />
+    <AppFooter />
   </main>
 </template>
 
 <style>
 @import '@unocss/reset/tailwind.css';
-@import '~/styles/main.css';
+/* @import '~/styles/main.css'; */
 </style>
